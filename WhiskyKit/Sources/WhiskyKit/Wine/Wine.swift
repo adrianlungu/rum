@@ -105,7 +105,7 @@ public class Wine {
     /// Execute a `wine start /unix {url}` command returning the output result
     public static func runProgram(
         at url: URL, args: [String] = [], bottle: Bottle, environment: [String: String] = [:],
-        onStarted: (() -> Void)? = nil
+        onStarted: (@Sendable () -> Void)? = nil
     ) async throws {
         if bottle.settings.dxvk {
             try enableDXVK(bottle: bottle)

@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.0.1
+
+### Fixes
+
+- Fixed Sparkle update checker compatibility with Swift 6 concurrency
+- Fixed `@Sendable` closure warning on program launch callback
+- Fixed Sparkle dependency pinned to unstable branch — now uses stable 2.x releases
+- Fixed SemanticVersion dependency using SSH URL that fails in CI — switched to HTTPS
+- Fixed missing local package references for WhiskyKit in Xcode project
+- Renamed product names to Rum/RumCmd/RumThumbnail so the built app is `Rum.app`
+- Updated CLI install path to `/usr/local/bin/rum`
+- Updated bundled CLI resource reference from `WhiskyCmd` to `RumCmd`
+
 ## 1.0.0
 
 First release of Rum, forked from [Whisky](https://github.com/Whisky-App/Whisky) v2.3.5.
